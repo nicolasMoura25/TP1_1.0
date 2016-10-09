@@ -26,7 +26,9 @@ class Parada{
 		int getId();
 		float getLatitude();
 		float getLongitude(); 
-		parada* getProx();
+		Parada* getProx();
+		
+		void Imprimir();
 
 //		void RegistraVeiculoNaParada(Veiculo *v);
 };   

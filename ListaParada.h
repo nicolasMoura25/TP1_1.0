@@ -1,5 +1,7 @@
-#ifndef __ListaParada_H__
-#define __ListaParada_H__
+#ifndef __ListaParada_h__
+#define __ListaParada_h__
+
+#include "Parada.h"
 
 #include<iostream>
 #include <string>
@@ -8,15 +10,22 @@ using namespace std;
 
 class ListaParada{
 	private:
-		Parada* locais;
+		Parada *locais,*ultimo;
 	public:
 		ListaParada();
+		ListaParada(int _ID, float _latitude, float _longitude);
 
+		void setLocais(Parada* _locais);
         	void carregaParadas();
 		void vinculaVeiculos();
 		void ImprimeUsoDasParadas();
 
-		void incluirInicio(int ID, float latitude, float longitude);
-		void incluirFinal(int ID, float latitude, float longitude);
+		Parada* getLocais();
+		bool vazia();
+		void ImprimirLista();
+		Parada pesquisar();
+
+		void incluir(int _ID, float _latitude, float _longitude);
+		
 };
 #endif

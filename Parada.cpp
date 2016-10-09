@@ -41,6 +41,14 @@ float Parada::getLongitude(){
 	return longitude;
 }
 
-parada* Parada::getProx(){
+Parada* Parada::getProx(){
 	return prox;
 }
+
+void Parada::Imprimir(){
+	cout << " ID: " << ID << endl;
+	cout << " Latitude: " << latitude << endl;
+	cout << " Longitude: " << longitude << endl;
+	
+}
+
