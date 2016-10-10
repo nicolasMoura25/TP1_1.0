@@ -7,9 +7,9 @@ Parada::Parada(){
 }
 
 Parada::Parada(int _ID, float _latitude, float _longitude){
-	int ID = _ID;
- 	float latitude = _latitude;
- 	float longitude = _longitude;
+	ID = _ID;
+ 	latitude = _latitude;
+ 	longitude = _longitude;
 	prox = NULL;
 }
 

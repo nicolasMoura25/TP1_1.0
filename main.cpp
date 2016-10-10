@@ -1,5 +1,5 @@
 //#include "ListaVeiculo.h"
-//#include "ListaParada.h"
+#include "ListaParada.h"
 //#include "ListaEstacao.h"
 #include <iostream>
 	
@@ -8,15 +8,15 @@ using namespace std;
 int main()
 {
 
-//	listaDeVeiculos transportePublico; // objeto que gerencia a lista de veículos
-//	listaDeParadas todasAsParadas; // objeto que gerencia a lista de paradas
-//	listaDeEstacoesDeBike bikePoa; // objeto que gerencia a lista de estacoes de bicicleta
+//	listaDeVeiculos transportePublico; 				// objeto que gerencia a lista de veículos
+	ListaParada todasAsParadas;					// objeto que gerencia a lista de paradas
+//	listaDeEstacoesDeBike bikePoa; 					// objeto que gerencia a lista de estacoes de bicicleta
 
 
 // método que deve criar uma lista com  todas linhas de veiculos
 	//transportePublico.carregaVeiculos("linhas.csv");
 // método que deve criar uma lista com todas paradas
-	//todasAsParadas.carregaParadas("paradas.csv");
+	todasAsParadas.carregaParadas("paradas.csv");
 // método que deve vincular às paradas a lista de ônibus que passa na parada
 	//todasAsParadas.vinculaVeiculos("paradalinha.csv");
 // método que deve criar a lista de estacoes de bicicleta em poa
@@ -37,7 +37,8 @@ int main()
 		switch(opcao) {
 			case 1: // Lista as linhas de ônibus
 				//transportePublico.ListaLinhasDeOnibus();
-				cout << " linhas de onibus" << endl;
+				cout << " Imprirmir linhas de onibus" << endl;
+				todasAsParadas.ImprimirLista();
 				break;
 			case 2: // Lista as paradas de ônibus de uma linha específica
 				cout << "Informe a linha: " << endl;

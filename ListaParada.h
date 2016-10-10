@@ -26,6 +26,8 @@ class ListaParada{
 		Parada pesquisar();
 
 		void incluir(int _ID, float _latitude, float _longitude);
+
+		void carregaParadas(const char *paradas);
 		
 };
 #endif
